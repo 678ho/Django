@@ -5,7 +5,6 @@
     <ul>
        {% for key, value in verbose_dict.items %}
             <li><a href="{% url key|add:':index' %}">{{ value }}</a></li>
-{% endwith %}
         {% endfor %}
     </ul>
 {% endblock content %}
